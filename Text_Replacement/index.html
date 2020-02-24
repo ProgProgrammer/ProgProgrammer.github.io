@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Замена текста</title>
+    <meta name="description" content="Задачка Яндекс">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form">
+        <div class="form-column group-buttons">
+            <div class="form-buttons">
+                <button class="button">
+                    Вставить с учетом тегов
+                </button>
+                <button class="button">
+                    Вставить без учета тегов
+                </button>
+            </div>
+            <div class="form-buttons">
+                <button class="button">
+                    Заменить содержимое с учетом тегов
+                </button>
+                <button class="button">
+                    Заменить содержимое без учета тегов
+                </button>
+            </div>
+        </div>
+        <div class="form-buttons-input bottom group-buttons">
+            <button class="button before-begin">
+                Вставить текст перед тегом элемента
+            </button>
+            <button class="button after-begin">
+                Вставить текст перед дочерним элементом
+            </button>
+            <button class="button before-end">
+                Вставить текст после дочернего элемента
+            </button>
+            <button class="button after-end">
+                Вставить текст после элемента
+            </button>
+            <button class="button-style style-toggle">
+                Поменять стили текста
+            </button>
+        </div>
+        <div class="form-column-input">
+            <input class="input" placeholder="Ввести текст" type="text" />
+            <div class="form-column-input-text">
+                <p class="form-column-input-text-p">
+                    Выберите способ замены или вставки тегов, либо способ вставки текста.
+                </p>
+            </div>
+        </div>
+        <div class="form-texts">
+            <h1 class="form-texts-text-h1">Нажмите на любые строки ниже после заполнения ячейки.</h1><br />
+            <h2 class="form-texts-text-h1 form-texts-text">
+                Привет.
+                <span class="form-texts-text-span form-texts-text">
+                    Как дела?
+                </span>
+            </h2>
+            <p class="form-texts-text-p form-texts-text">Как погода?</p>
+            <p class="form-texts-text-p form-texts-text">Азаза...</p>
+            <p class="form-texts-text-p form-texts-text">Мне нравятся брови твои и глаза.</p>
+        </div>
+    </div>
+    <script src="task.js"></script>
+</body>
+
+</html>

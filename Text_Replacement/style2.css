@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input:focus,
+button:focus {
+    outline: none !important;
+}
+
+.form {
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-column-input {
+    margin: 0 auto;
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.form-column-input-text {
+    padding: 5px;
+    max-width: 300px;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: white;
+}
+
+.form-column-input-text-p {
+    display: none;
+}
+
+.form-buttons,
+.form-buttons-input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.button,
+.button-style {
+    margin: 30px 10px 0;
+    padding: 0 15px;
+    width: 150px;
+    height: 55px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.input {
+    margin: 30px auto 0;
+    padding: 5px 15px;
+    max-width: 300px;
+    width: 100%;
+    height: 35px;
+    border-color: black;
+}
+
+.form-texts {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.form-texts .form-texts-text {
+    text-align: center;
+}
+
+.form-texts .form-texts-text-h1 {
+    font-size: 18px;
+}
+
+.form-texts .form-texts-text-span {
+    font-size: 18px;
+    color: red;
+}
+
+.form-texts .form-texts-text-p {
+    font-size: 14px;
+    color: blue;
+}
+
+@media all and (max-width: 575px) {
+
+    .form-buttons,
+    .form-buttons-input {
+        justify-content: flex-start;
+    }
+}

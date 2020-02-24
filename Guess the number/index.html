@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Рандом</title>
+    <meta name="description" content="Задачка Яндекс">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div data-min="0" data-max="100" class="form">
+        <label class="label">
+            <span class="label-span">Минимальное число (не меньше 0):</span>
+            <input type="number" class="number number-min">
+            <span class="label-span-window"></span>
+        </label>
+        <label class="label">
+            <span class="label-span">Максимальное число (не больше 100):</span>
+            <input type="number" class="number number-max">
+            <span class="label-span-window"></span>
+        </label>
+        <label class="label">
+            <span class="label-span">Случайное число:</span>
+            <input type="number" class="number number-guess">
+            <span class="label-span-window"></span>
+        </label>
+        <button class="button">Угадать число</button>
+        <button class="reset">Очистить</button>
+        <label class="label-bottom">
+            <span class="label-span">Вывод:</span>
+            <input type="text" class="number number-conclusion">
+        </label>
+    </div>
+    <script src="task.js"></script>
+</body>
+
+</html>

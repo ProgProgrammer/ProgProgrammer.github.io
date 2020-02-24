@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+}
+
+.form {
+    margin: 30px auto;
+    padding: 15px;
+    max-width: 200px;
+}
+
+.input {
+    padding: 5px;
+    width: 200px;
+    border: 1px solid black;
+}

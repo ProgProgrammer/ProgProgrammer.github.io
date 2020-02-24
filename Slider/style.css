@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.window {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.window-block {
+    top: 0;
+    bottom: 0;
+    display: flex;
+    position: absolute;
+    transition-property: transform;
+    transition-timing-function: linear;
+}
+
+.window-blocks {
+    background-image: url(img/museum.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.window-blocks.smoke {
+    background-image: url(img/smoke.jpg);
+}
+
+.window-blocks.pred {
+    background-image: url(img/pred.jpg);
+}
+
+.window-block-pagination {
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    display: none;
+    position: absolute;
+}
+
+.window-block-pagination-block {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.window-block-pagination-block-bullet {
+    margin: 0 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: grey;
+}
+
+.window-blocks-arrow-left,
+.window-blocks-arrow-right {
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    
+}
+
+.window-blocks-arrow-left {
+    left: 30px;
+}
+
+.window-blocks-arrow-right {
+    right: 30px;
+}
+
+.window-blocks-arrow-left-top,
+.window-blocks-arrow-left-bottom,
+.window-blocks-arrow-right-top,
+.window-blocks-arrow-right-bottom {
+    min-width: 25px;
+    height: 2px;
+    background-color: grey;
+}
+
+.window-blocks-arrow-left:hover .window-blocks-arrow-left-top,
+.window-blocks-arrow-left:hover .window-blocks-arrow-left-bottom,
+.window-blocks-arrow-right:hover .window-blocks-arrow-right-top,
+.window-blocks-arrow-right:hover .window-blocks-arrow-right-bottom {
+    background-color: white;
+}
+
+.window-blocks-arrow-right-top {
+    transform: rotate(45deg) translate(2px, -15px);
+}
+
+.window-blocks-arrow-right-bottom {
+    transform: rotate(-45deg) translate(-14px, -4px);
+}
+
+.window-blocks-arrow-left-top {
+    transform: rotate(-45deg) translate(15px, 3px);
+}
+
+.window-blocks-arrow-left-bottom {
+    transform: rotate(45deg) translate(-3px, 14.5px);
+}

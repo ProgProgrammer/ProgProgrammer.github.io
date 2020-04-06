@@ -203,9 +203,10 @@ function Calculator() {
   this.deleteButton = function () {
     this.input.value = this.input.value.replace(/ /gi, "");
     this.stringInput = this.input.value;
+    this.string = this.stringInput;
 
     for (this.i = 0; this.i < this.stringInput.length; this.i++) {
-      if (this.stringInput[this.i] === "=" && typeof this.stringInput[this.i + 1] === "number") {
+      if (this.stringInput[this.i] === "=" && this.stringInput[this.i + 1] !== "") {
         this.arraySymbols.splice(0, this.arraySymbols.length - 2);
         this.input.value = this.arraySymbols[0];
         this.numbersExpression = this.arraySymbols[0];
@@ -216,7 +217,7 @@ function Calculator() {
     this.stringInput = this.arraySymbols[this.arraySymbols.length - 2];
     this.stringInput += this.arraySymbols[this.arraySymbols.length - 1];
 
-    if (typeof Number(this.stringInput[this.stringInput.length - 1]) === "number" && String(this.stringInput[this.stringInput.length - 2]) === "-" && this.stringInput[this.stringInput.length - 3] !== undefined) {
+    if (this.stringInput[this.stringInput.length - 1] !== "" && String(this.stringInput[this.stringInput.length - 2]) === "-" && this.stringInput[this.stringInput.length - 3] !== undefined) {
       this.arraySymbols.splice(this.arraySymbols.length - 1, 1);
       this.input.value = "";
 
@@ -225,7 +226,7 @@ function Calculator() {
       }
 
       return;
-    } else if (typeof Number(this.stringInput[this.stringInput.length - 1]) === "number" && String(this.stringInput[this.stringInput.length - 2]) === "-") {
+    } else if (this.string[this.string.length - 1] !== "" && this.string[this.string.length - 2] === "-") {
       this.arraySymbols.splice(this.arraySymbols.length - 1, 1);
       this.input.value = "";
 
@@ -482,7 +483,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55791" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56548" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

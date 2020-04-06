@@ -433,7 +433,7 @@ var _libraryCalculator = require("./libraryCalculator.js");
         return;
       }
 
-      if (event.key === "delete" || event.key === "Backspace") {
+      if (event.key === "Backspace") {
         clickEffect("delete", buttons);
         calculator.deleteButton(event.key);
       } else if (event.key === "0" || event.key === "1" || event.key === "2" || event.key === "3" || event.key === "4" || event.key === "5" || event.key === "6" || event.key === "7" || event.key === "8" || event.key === "9" || event.key === "+" || event.key === "-" || event.key === "*" || event.key === "/" || event.key === "." || event.key === "=") {
@@ -482,7 +482,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50353" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55791" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

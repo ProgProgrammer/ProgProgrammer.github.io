@@ -137,6 +137,7 @@ function Calculator() {
   this.variable = "";
   this.elementFocus;
   this.mainFocus;
+  this.stringPoint;
 
   this.focusDelete = function (elementFocus, mainFocus) {
     this.elementFocus = elementFocus;
@@ -151,6 +152,18 @@ function Calculator() {
         }
       }
     }
+  };
+
+  this.pointCheck = function (symbol) {
+    this.stringPoint = symbol;
+
+    for (this.i = 0; this.i < this.stringPoint.length; this.i++) {
+      if (this.stringPoint[this.i] === ".") {
+        return true;
+      }
+    }
+
+    return false;
   };
 
   this.checkSymbols = function (arraySymbols) {
@@ -206,7 +219,7 @@ function Calculator() {
     this.string = this.stringInput;
 
     for (this.i = 0; this.i < this.stringInput.length; this.i++) {
-      if (this.stringInput[this.i] === "=" && this.stringInput[this.i + 1] !== "") {
+      if (this.stringInput[this.i] === "=" && this.stringInput[this.i + 1] !== "" && this.arraySymbols.length <= 1) {
         this.arraySymbols.splice(0, this.arraySymbols.length - 2);
         this.input.value = this.arraySymbols[0];
         this.numbersExpression = this.arraySymbols[0];
@@ -308,9 +321,13 @@ function Calculator() {
           this.input.value += this.symbol;
         }
       } else {
-        this.arraySymbols[this.arraySymbols.length - 1] += this.symbol;
-        this.arrayAllSymbols[this.arrayAllSymbols.length - 1] += this.symbol;
-        this.input.value += this.symbol;
+        if (this.symbol === "." && this.pointCheck(this.arraySymbols[this.arraySymbols.length - 1]) === true) {
+          return;
+        } else {
+          this.arraySymbols[this.arraySymbols.length - 1] += this.symbol;
+          this.arrayAllSymbols[this.arrayAllSymbols.length - 1] += this.symbol;
+          this.input.value += this.symbol;
+        }
       }
     } else {
       if (/\d/gi.test(this.arraySymbols[this.arraySymbols.length - 1]) === false) {
@@ -483,7 +500,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56548" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63189" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

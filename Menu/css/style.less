@@ -1,0 +1,1087 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,700,700i&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, span, button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a, p, span, button, div {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:focus, input:focus, button:focus {
+  outline: none;
+}
+
+.text-arrays {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.block-menu-fixed {
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 8;
+}
+
+.header {
+  top: -85px;
+  width: 100%;
+  height: 85px;
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px #000000;
+  transition: top .3s linear;
+  z-index: 9;
+
+  &-container {
+    display: flex;
+  }
+
+  &-blocks {
+    display: flex;
+    justify-content: space-between;
+
+    &-block-left {
+      display: flex;
+    }
+
+    &-burger {
+      width: 40px;
+      height: 28px;
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &-top,
+      &-center,
+      &-bottom {
+        width: 40px;
+        height: 4px;
+        background-color: #1B4677;
+      }
+    }
+  }
+
+  &-logo {
+    margin-top: 20px;
+    /*width: 100%;*/
+
+    &-img {
+      max-width: 200px;
+      width: 100%;
+    }
+  }
+
+  &-ul {
+    margin-top: 30px;
+    margin-left: 30px;
+    /*min-width: 621px;*/
+    max-width: 621px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &-li {
+      margin-left: 15px;
+      list-style-type: none;
+
+      &-a {
+        font-weight: 400;
+        text-decoration: none;
+        color: black;
+
+        &:hover .header-ul-li-a-span {
+          box-shadow: inset 0 calc(-2px) 0 0 #1B4677;
+          text-decoration: none;
+        }
+      }
+
+      &.phone {
+        display: none;
+      }
+    }
+
+    &-li:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &-phone {
+    margin-top: 30px;
+    margin-left: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.main {
+  width: 100%;
+}
+
+.main-text-h2 {
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.main-mortgage-div {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.main-slider {
+  .swiper-slide {
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &-background-shadow {
+      padding-bottom: 70px;
+      min-height: 500px;
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 26.78%, rgba(0, 0, 0, 0) 100%);
+      z-index: -1;
+    }
+  }
+
+  &-p-top {
+    margin-top: 120px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    color: white;
+  }
+
+  &-h {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: white;
+  }
+
+  &-p-bottom {
+    margin-top: 15px;
+    color: white;
+  }
+
+  &-div-button {
+    margin-top: 20px;
+  }
+
+  &-button {
+    padding: 11.5px 51.5px;
+    min-width: 188px;
+    background-color: #1B4677;
+    border-radius: 5px;
+    text-decoration: none;
+
+    &-span {
+      font-size: 14px;
+      color: white;
+      line-height: 40px;
+    }
+
+    &:hover {
+      background-color: black;
+    }
+  }
+
+  & .swiper-pagination.swiper-pagination-bullets {
+    top: -45px;
+    left: 6px;
+
+    & .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background-color: white;
+    }
+
+    & .swiper-pagination-bullet {
+      margin-left: 8px;
+      background-color: rgba(255, 255, 255, 0.5);
+      cursor: pointer;
+    }
+  }
+}
+
+.main {
+  &-apartment-selection {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    height: 351px;
+    background: #1B4677;
+    position: relative;
+
+    &-blockBackground {
+      right: 0;
+      position: absolute;
+      background-size: cover !important;
+      background-position: center;
+      background-repeat: no-repeat !important;
+    }
+
+    &-h2 {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 44px;
+      color: white;
+    }
+
+    &-block {
+      display: flex;
+      flex-wrap: wrap;
+      z-index: 1;
+    }
+
+    &-div {
+      margin-top: 30px;
+      margin-left: 30px;
+      position: relative;
+
+      &-p {
+        font-weight: 600;
+        color: white;
+      }
+
+      &-block-input {
+        margin-top: 10px;
+        position: relative;
+
+        &-arrow {
+          top: 1px;
+          right: 1px;
+          width: 28px;
+          height: 38px;
+          border-radius: 0 5px 5px 0;
+          display: flex;
+          align-items: center;
+          position: absolute;
+          cursor: pointer;
+
+          &-img {
+            margin: 0 auto;
+          }
+        }
+
+        &.population {
+          & .main-apartment-selection-div-input {
+            min-width: 160px !important;
+            max-width: 160px !important;
+          }
+
+          & .main-apartment-selection-div-choice {
+            min-width: 160px !important;
+            max-width: 160px !important;
+          }
+        }
+      }
+
+      &-input {
+        padding-left: 10px;
+        padding-right: 30px;
+        min-width: 271px;
+        width: 100%;
+        height: 40px;
+        color: white;
+        border: 1px solid #FFFFFF;
+        border-radius: 5px;
+        background-color: transparent;
+        cursor: pointer;
+      }
+
+      &-choice {
+        top: 42px;
+        left: 0;
+        min-width: 271px;
+        display: none;
+        flex-direction: column;
+        border: 1px solid #FFFFFF;
+        border-radius: 5px;
+        position: absolute;
+
+        &-block {
+          padding-left: 10px;
+          padding-right: 10px;
+          height: 40px;
+          cursor: pointer;
+
+          &-p {
+            line-height: 40px;
+            color: white;
+          }
+
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+          }
+        }
+      }
+
+      &-buttons {
+        margin-top: 10px;
+        min-width: 192px;
+        display: flex;
+
+        &-button {
+          padding: 0 17px;
+          border-top: 1px solid white;
+          border-right: 1px solid white;
+          border-left: none;
+          border-bottom: 1px solid white;
+          height: 40px;
+          color: white;
+          background: transparent;
+          cursor: pointer;
+
+          &:first-child {
+            padding: 0 10px;
+            border: 1px solid white;
+            border-radius: 5px 0 0 5px;
+          }
+
+          &:last-child {
+            padding: 0 17px;
+            border-top: 1px solid white;
+            border-right: 1px solid white;
+            border-left: none;
+            border-bottom: 1px solid white;
+            border-radius: 0 5px 5px 0;
+          }
+
+          &:hover {
+            background: rgba(255, 255, 255, 0.1);
+          }
+
+          &.active:hover {
+            color: black !important;
+          }
+        }
+      }
+
+      &-inputs {
+        margin-top: 10px;
+        display: flex;
+
+        &-div {
+          position: relative;
+
+          &:first-child {
+            margin-right: 10px;
+          }
+
+          &-span {
+            top: 11.5px;
+            left: 10px;
+            position: absolute;
+            color: white;
+            font-size: 14px;
+            line-height: 17px;
+          }
+
+          &-input {
+            padding-left: 30px;
+            width: 100%;
+            max-width: 124px;
+            height: 40px;
+            background-color: transparent;
+            border: 1px solid #FFFFFF;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+
+    &-div:first-child {
+      margin-left: 0;
+    }
+
+    &-button {
+      margin-top: 30px;
+      width: 100%;
+      max-width: 188px;
+      height: 40px;
+      border-radius: 5px;
+      border: none;
+      background-color: white;
+      font-size: 14px;
+      cursor: pointer;
+
+      &:hover {
+        color: white;
+        background-color: black;
+      }
+    }
+  }
+}
+
+.main-projects-houses {
+  &-h2 {
+    margin-top: 60px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  &-row {
+    margin-top: 30px;
+  }
+
+  &-block {
+    margin-top: 40px;
+    transition: .2s linear;
+    cursor: pointer;
+
+    &:first-child,
+    &:nth-child(2),
+    &:nth-child(3) {
+      margin-top: 0;
+    }
+
+    &-image {
+      width: 100%;
+      display: flex;
+      overflow: hidden;
+
+      &-img {
+        width: 100%;
+        transition: .2s linear;
+      }
+    }
+
+    &:hover .main-projects-houses-block-image-img {
+      transform: scale(1.2);
+      transition: .2s linear;
+    }
+
+    &:hover .main-projects-houses-block-a-span {
+      box-shadow: inset 0 calc(-2px) 0 0 #1B4677;
+    }
+
+    &-h {
+      margin-top: 15px;
+    }
+
+    &-a {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      text-decoration: none;
+      color: black;
+    }
+
+    &-p {
+      margin-top: 10px;
+    }
+  }
+}
+
+.main-mortgage {
+  padding: 120px 15px 100px 50px;
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  position: relative;
+
+  &-block {
+    margin: 60px auto 0;
+    max-width: 1110px;
+    width: 100%;
+    display: flex;
+  }
+
+  &-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-h2 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  &-p {
+    margin-top: 15px;
+    width: 45.67567567567568%;
+  }
+
+  &-a {
+    margin-top: 20px;
+  }
+}
+
+.main-people {
+
+  &-h2 {
+    margin-top: 60px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  &-slider-container {
+
+    & .swiper-slide {
+      margin-top: 30px;
+      cursor: pointer;
+
+      &-div {
+        display: flex;
+        overflow: hidden;
+
+        &-img {
+          width: 100%;
+          transition: .2s linear;
+        }
+      }
+
+      &:hover .swiper-slide-div-img {
+        transform: scale(1.2);
+        transition: .2s linear;
+      }
+
+      &:hover .swiper-slide-text-p-span {
+        box-shadow: inset 0 calc(-2px) 0 0 #1B4677;
+      }
+
+      &-text {
+        margin-top: 20px;
+        display: flex;
+
+        &-img {
+          margin-right: 10px;
+        }
+
+        &-p {
+          margin-top: 11px;
+          height: 19px;
+          font-weight: 600;
+          color: black;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.main-gallary {
+
+  &-h2 {
+    margin-top: 60px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  & .swiper-container.gallary {
+    & .swiper-slide {
+      margin-top: 30px;
+      display: flex;
+      overflow: hidden;
+      cursor: pointer;
+
+      & .main-gallary-img {
+        width: 100%;
+        transition: .2s linear;
+      }
+
+      & .main-gallary-a {
+        border: none !important;
+      }
+
+      &:hover .main-gallary-img {
+        transform: scale(1.2);
+        transition: .2s linear;
+      }
+    }
+  }
+}
+
+.footer {
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #F0F0F0;
+  position: relative;
+
+  &-news {
+    padding-top: 40px;
+    padding-bottom: 60px;
+
+    &-h2 {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 44px;
+    }
+
+    &-block {
+      margin-top: 20px;
+      cursor: pointer;
+
+      &-p-top {
+        margin-bottom: 10px;
+        color: #808080;
+      }
+
+      &-p-cetner {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        text-decoration: none;
+        color: black;
+      }
+
+      &-p-bottom {
+        margin-top: 10px;
+      }
+
+      &:hover .footer-news-block-p-cetner-span {
+        box-shadow: inset 0 calc(-2px) 0 0 #1B4677;
+      }
+    }
+  }
+
+  &-hr {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background: #C4C4C4;
+  }
+}
+
+.footer-contacts {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+
+  & .header-ul {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  &-right-block {
+    display: flex;
+    flex-direction: column;
+
+    &-a {
+      margin-top: 10px;
+      text-decoration: none;
+      color: black;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:hover .footer-contacts-right-block-a-span {
+        box-shadow: inset 0 calc(-2px) 0 0 #1B4677;
+      }
+    }
+  }
+
+  &-blockdown {
+    top: 100px;
+    display: flex;
+    position: absolute;
+  }
+
+  &-phone {
+    margin-right: 30px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+  }
+
+  &-mail {
+    color: black;
+    text-decoration: none;
+
+    &:hover .footer-contacts-mail-span {
+      box-shadow: inset 0 calc(-2px) 0 0 #1B4677;
+    }
+  }
+
+  &-p {
+    margin-top: 30px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .main-mortgage-div {
+    max-width: 1140px;
+  }
+}
+
+@media all and (max-width: 1199px) {
+  .main-mortgage-div {
+    max-width: 960px;
+  }
+
+  .footer-contacts {
+    & .footer-contacts-blockdown {
+      position: static;
+    }
+  }
+}
+
+@media all and (min-width: 1025px)
+{
+  .header-div-ul {
+    width: 100%;
+    display: flex;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .header-phone {
+    display: none;
+  }
+
+  .header-div-ul {
+    box-shadow: 0px 3px 3px 0px #000000;
+  }
+
+  .main {
+    margin-top: 80px !important;
+  }
+
+  .header {
+    top: 0;
+    left: 0;
+    height: 80px;
+    display: flex;
+    position: fixed;
+    z-index: 9;
+    background-color: white;
+
+    &-container {
+      height: 80px;
+      align-items: center;
+    }
+
+    & .header-blocks {
+      align-items: center;
+      position: static;
+
+      &-block-left {
+
+        & .header-logo {
+          margin-top: 0;
+          left: 15px;
+          top: 15px;
+          position: absolute;
+        }
+      }
+
+      &-burger {
+        right: 15px;
+        display: flex;
+        position: absolute;
+        cursor: pointer;
+
+        &-top {
+          transform: rotate(0deg) translate(0px, 0px);
+          transition: transform .5s linear;
+        }
+
+        &-center {
+          opacity: 1;
+          transition: opacity .5s linear;
+        }
+
+        &-bottom {
+          transform: rotate(0deg) translate(0px, 0px);
+          transition: transform .5s linear;
+        }
+      }
+    }
+
+    & .header-div-ul {
+      top: 80px;
+      left: 0;
+      right: 0;
+      min-width: 100%;
+      height: 0;
+      position: absolute;
+      overflow: hidden;
+      transition: height .5s linear;
+
+      & .header-ul {
+        margin: 0;
+        padding: 0 15px;
+        min-width: 100%;
+        flex-direction: column;
+        background: white;
+
+        &-li {
+          margin: 0;
+          height: 60px;
+          display: flex;
+          align-items: center;
+
+          &-a {
+            height: 40px;
+            display: flex;
+            align-items: center;
+          }
+
+          &.phone .header-phone {
+            margin: 0;
+            height: 40px;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+
+  .main-slider-p-top {
+    font-size: 16px;
+    line-height: 18.5px;
+  }
+
+  .main-text-h2 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  .main-projects-houses-block-a {
+    font-size: 22px;
+    line-height: 26.5px;
+  }
+}
+
+@media all and (max-width: 991px)
+{
+  .main-mortgage {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .main-mortgage-div {
+    max-width: 690px;
+  }
+
+  .main-projects-houses-block:nth-child(3) {
+    margin-top: 40px;
+  }
+
+  .footer-contacts {
+    & .header-ul {
+      max-width: 1000px;
+    }
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1199px) {
+  .display-mobile-none {
+    display: none !important;
+  }
+
+  .footer-contacts {
+    & .footer-contacts-right-block {
+      margin-top: 20px;
+      order: 2;
+    }
+
+    & .footer-contacts-blockdown {
+      margin-top: 90px;
+      order: 1;
+    }
+
+    & .footer-name-company {
+      order: 3;
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  .main-mortgage-div {
+    max-width: 510px;
+  }
+
+  .display-mobile-none {
+    display: none !important;
+  }
+
+  .footer-contacts {
+    & .header-ul {
+      flex-direction: column;
+
+      &-li {
+        margin-top: 10px;
+        margin-left: 0;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+
+    & .footer-contacts-blockdown {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media all and (max-width: 535px) {
+  .main-apartment-selection-blockBackground {
+    background: none !important;
+  }
+
+  .main-people {
+    overflow: hidden !important;
+  }
+
+  .main-people-slider-container {
+    padding: 0 17% !important;
+  }
+
+  .main-people-slider-container .swiper-container {
+    overflow: visible !important;
+  }
+
+  .main-gallary {
+    overflow: hidden !important;
+  }
+
+  .main-gallary .main-gallary-container {
+    padding: 0 17% !important;
+  }
+
+  .main-gallary .gallary {
+    overflow: visible !important;
+  }
+
+  /*.main-people-slider-container {
+
+      & .swiper-slide {
+          margin-top: 0 !important;
+          padding: 12.5% !important;
+      }
+  }
+
+  .swiper-container.gallary {
+
+      & .swiper-slide {
+          margin-top: 0 !important;
+          padding: 12.5% !important;
+      }
+
+  }*/
+
+  .main-slider {
+    min-height: 566px;
+
+    & .swiper-slide {
+      min-height: 300px;
+      max-height: 300px;
+
+      & .swiper-slide-background-shadow {
+        padding: 20px 0 40px;
+        bottom: -266px;
+        position: absolute;
+        z-index: 1;
+        background-color: black;
+        min-height: 266px;
+        max-height: 266px;
+
+        & .main-slider-p-top {
+          margin-top: 0;
+        }
+
+        & .main-slider-p-bottom {
+          margin-top: 10px;
+        }
+
+        & .main-slider-div-button {
+          & .main-slider-button {
+            padding: 0;
+            min-width: 100%;
+            width: 100%;
+            display: flex;
+            height: 40px;
+
+            &-span {
+              width: 100%;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+
+    & .swiper-pagination.swiper-pagination-bullets {
+      top: -38px;
+    }
+  }
+
+  .main-slider-button.white-button-mobile:hover {
+    background-color: white;
+
+    & .main-slider-button-span {
+      color: black;
+    }
+  }
+
+  .main-text-h2 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .main-projects-houses-block-a {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .main-projects-houses-block:nth-child(2) {
+    margin-top: 40px;
+  }
+
+  .main-mortgage {
+    padding: 0;
+    min-height: 300px;
+    max-height: 300px;
+    background-image: url(../img/family-2.png) !important;
+
+    &-block {
+      min-height: 566px;
+    }
+
+    &-div {
+      top: 300px;
+      padding: 20px 15px 40px;
+      min-height: 245px;
+      border-bottom: 1px solid #C4C4C4;
+      position: absolute;
+    }
+
+    &-p {
+      width: 100%;
+    }
+
+    & .main-slider-button {
+      padding: 0;
+      height: 40px;
+      display: flex;
+      align-items: center;
+
+      &-span {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}

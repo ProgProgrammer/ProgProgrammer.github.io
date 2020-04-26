@@ -1,0 +1,943 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Montserrat Light Italic'), local('Montserrat-LightItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZYgzz_PZ1.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Italic'), local('Montserrat-Italic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUQjIg1_i6t8kCHKm459WxRyS7j.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Montserrat Medium Italic'), local('Montserrat-MediumItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZOg3z_PZ1.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Montserrat Bold Italic'), local('Montserrat-BoldItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZcgvz_PZ1.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Montserrat Light'), local('Montserrat-Light'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_cJD3gnD-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Montserrat Medium'), local('Montserrat-Medium'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_ZpC3gnD-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3gnD-w.ttf) format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+button {
+  font-family: 'Montserrat', sans-serif;
+}
+a,
+p,
+span,
+button,
+div {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a:focus,
+input:focus,
+button:focus {
+  outline: none;
+}
+.text-arrays {
+  font-size: 14px;
+  line-height: 17px;
+}
+.block-menu-fixed {
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 8;
+}
+.header {
+  top: -85px;
+  width: 100%;
+  height: 85px;
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px #000000;
+  transition: top 0.3s linear;
+  z-index: 9;
+}
+.header-container {
+  display: flex;
+}
+.header-blocks {
+  display: flex;
+  justify-content: space-between;
+}
+.header-blocks-block-left {
+  display: flex;
+}
+.header-blocks-burger {
+  width: 40px;
+  height: 28px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header-blocks-burger-top,
+.header-blocks-burger-center,
+.header-blocks-burger-bottom {
+  width: 40px;
+  height: 4px;
+  background-color: #1B4677;
+}
+.header-logo {
+  margin-top: 20px;
+  /*width: 100%;*/
+}
+.header-logo-img {
+  max-width: 200px;
+  width: 100%;
+}
+.header-ul {
+  margin-top: 30px;
+  margin-left: 30px;
+  /*min-width: 621px;*/
+  max-width: 621px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header-ul-li {
+  margin-left: 15px;
+  list-style-type: none;
+}
+.header-ul-li-a {
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+}
+.header-ul-li-a:hover .header-ul-li-a-span {
+  box-shadow: inset 0 calc(-2px) 0 0 #1B4677;
+  text-decoration: none;
+}
+.header-ul-li.phone {
+  display: none;
+}
+.header-ul-li:first-child {
+  margin-left: 0;
+}
+.header-phone {
+  margin-top: 30px;
+  margin-left: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+}
+.main {
+  width: 100%;
+}
+.main-text-h2 {
+  font-size: 36px;
+  line-height: 44px;
+}
+.main-mortgage-div {
+  margin: 0 auto;
+  width: 100%;
+}
+.main-slider .swiper-slide {
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-slider .swiper-slide-background-shadow {
+  padding-bottom: 70px;
+  min-height: 500px;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 26.78%, rgba(0, 0, 0, 0) 100%);
+  z-index: -1;
+}
+.main-slider-p-top {
+  margin-top: 120px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  color: white;
+}
+.main-slider-h {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: white;
+}
+.main-slider-p-bottom {
+  margin-top: 15px;
+  color: white;
+}
+.main-slider-div-button {
+  margin-top: 20px;
+}
+.main-slider-button {
+  padding: 11.5px 51.5px;
+  min-width: 188px;
+  background-color: #1B4677;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.main-slider-button-span {
+  font-size: 14px;
+  color: white;
+  line-height: 40px;
+}
+.main-slider-button:hover {
+  background-color: black;
+}
+.main-slider .swiper-pagination.swiper-pagination-bullets {
+  top: -45px;
+  left: 6px;
+}
+.main-slider .swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: white;
+}
+.main-slider .swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin-left: 8px;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+.main-apartment-selection {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  height: 351px;
+  background: #1B4677;
+  position: relative;
+}
+.main-apartment-selection-blockBackground {
+  right: 0;
+  position: absolute;
+  background-size: cover !important;
+  background-position: center;
+  background-repeat: no-repeat !important;
+}
+.main-apartment-selection-h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: white;
+}
+.main-apartment-selection-block {
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+.main-apartment-selection-div {
+  margin-top: 30px;
+  margin-left: 30px;
+  position: relative;
+}
+.main-apartment-selection-div-p {
+  font-weight: 600;
+  color: white;
+}
+.main-apartment-selection-div-block-input {
+  margin-top: 10px;
+  position: relative;
+}
+.main-apartment-selection-div-block-input-arrow {
+  top: 1px;
+  right: 1px;
+  width: 28px;
+  height: 38px;
+  border-radius: 0 5px 5px 0;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+}
+.main-apartment-selection-div-block-input-arrow-img {
+  margin: 0 auto;
+}
+.main-apartment-selection-div-block-input.population .main-apartment-selection-div-input {
+  min-width: 160px !important;
+  max-width: 160px !important;
+}
+.main-apartment-selection-div-block-input.population .main-apartment-selection-div-choice {
+  min-width: 160px !important;
+  max-width: 160px !important;
+}
+.main-apartment-selection-div-input {
+  padding-left: 10px;
+  padding-right: 30px;
+  min-width: 271px;
+  width: 100%;
+  height: 40px;
+  color: white;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.main-apartment-selection-div-choice {
+  top: 42px;
+  left: 0;
+  min-width: 271px;
+  display: none;
+  flex-direction: column;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  position: absolute;
+}
+.main-apartment-selection-div-choice-block {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 40px;
+  cursor: pointer;
+}
+.main-apartment-selection-div-choice-block-p {
+  line-height: 40px;
+  color: white;
+}
+.main-apartment-selection-div-choice-block:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.main-apartment-selection-div-buttons {
+  margin-top: 10px;
+  min-width: 192px;
+  display: flex;
+}
+.main-apartment-selection-div-buttons-button {
+  padding: 0 17px;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  border-left: none;
+  border-bottom: 1px solid white;
+  height: 40px;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+}
+.main-apartment-selection-div-buttons-button:first-child {
+  padding: 0 10px;
+  border: 1px solid white;
+  border-radius: 5px 0 0 5px;
+}
+.main-apartment-selection-div-buttons-button:last-child {
+  padding: 0 17px;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  border-left: none;
+  border-bottom: 1px solid white;
+  border-radius: 0 5px 5px 0;
+}
+.main-apartment-selection-div-buttons-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.main-apartment-selection-div-buttons-button.active:hover {
+  color: black !important;
+}
+.main-apartment-selection-div-inputs {
+  margin-top: 10px;
+  display: flex;
+}
+.main-apartment-selection-div-inputs-div {
+  position: relative;
+}
+.main-apartment-selection-div-inputs-div:first-child {
+  margin-right: 10px;
+}
+.main-apartment-selection-div-inputs-div-span {
+  top: 11.5px;
+  left: 10px;
+  position: absolute;
+  color: white;
+  font-size: 14px;
+  line-height: 17px;
+}
+.main-apartment-selection-div-inputs-div-input {
+  padding-left: 30px;
+  width: 100%;
+  max-width: 124px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+}
+.main-apartment-selection-div:first-child {
+  margin-left: 0;
+}
+.main-apartment-selection-button {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 188px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+.main-apartment-selection-button:hover {
+  color: white;
+  background-color: black;
+}
+.main-projects-houses-h2 {
+  margin-top: 60px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+}
+.main-projects-houses-row {
+  margin-top: 30px;
+}
+.main-projects-houses-block {
+  margin-top: 40px;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+.main-projects-houses-block:first-child,
+.main-projects-houses-block:nth-child(2),
+.main-projects-houses-block:nth-child(3) {
+  margin-top: 0;
+}
+.main-projects-houses-block-image {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+.main-projects-houses-block-image-img {
+  width: 100%;
+  transition: 0.2s linear;
+}
+.main-projects-houses-block:hover .main-projects-houses-block-image-img {
+  transform: scale(1.2);
+  transition: 0.2s linear;
+}
+.main-projects-houses-block:hover .main-projects-houses-block-a-span {
+  box-shadow: inset 0 calc(-2px) 0 0 #1B4677;
+}
+.main-projects-houses-block-h {
+  margin-top: 15px;
+}
+.main-projects-houses-block-a {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-decoration: none;
+  color: black;
+}
+.main-projects-houses-block-p {
+  margin-top: 10px;
+}
+.main-mortgage {
+  padding: 120px 15px 100px 50px;
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  position: relative;
+}
+.main-mortgage-block {
+  margin: 60px auto 0;
+  max-width: 1110px;
+  width: 100%;
+  display: flex;
+}
+.main-mortgage-div {
+  display: flex;
+  flex-direction: column;
+}
+.main-mortgage-h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+}
+.main-mortgage-p {
+  margin-top: 15px;
+  width: 45.67567568%;
+}
+.main-mortgage-a {
+  margin-top: 20px;
+}
+.main-people-h2 {
+  margin-top: 60px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+}
+.main-people-slider-container .swiper-slide {
+  margin-top: 30px;
+  cursor: pointer;
+}
+.main-people-slider-container .swiper-slide-div {
+  display: flex;
+  overflow: hidden;
+}
+.main-people-slider-container .swiper-slide-div-img {
+  width: 100%;
+  transition: 0.2s linear;
+}
+.main-people-slider-container .swiper-slide:hover .swiper-slide-div-img {
+  transform: scale(1.2);
+  transition: 0.2s linear;
+}
+.main-people-slider-container .swiper-slide:hover .swiper-slide-text-p-span {
+  box-shadow: inset 0 calc(-2px) 0 0 #1B4677;
+}
+.main-people-slider-container .swiper-slide-text {
+  margin-top: 20px;
+  display: flex;
+}
+.main-people-slider-container .swiper-slide-text-img {
+  margin-right: 10px;
+}
+.main-people-slider-container .swiper-slide-text-p {
+  margin-top: 11px;
+  height: 19px;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+}
+.main-gallary-h2 {
+  margin-top: 60px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+}
+.main-gallary .swiper-container.gallary .swiper-slide {
+  margin-top: 30px;
+  display: flex;
+  overflow: hidden;
+  cursor: pointer;
+}
+.main-gallary .swiper-container.gallary .swiper-slide .main-gallary-img {
+  width: 100%;
+  transition: 0.2s linear;
+}
+.main-gallary .swiper-container.gallary .swiper-slide .main-gallary-a {
+  border: none !important;
+}
+.main-gallary .swiper-container.gallary .swiper-slide:hover .main-gallary-img {
+  transform: scale(1.2);
+  transition: 0.2s linear;
+}
+.footer {
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #F0F0F0;
+  position: relative;
+}
+.footer-news {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.footer-news-h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+}
+.footer-news-block {
+  margin-top: 20px;
+  cursor: pointer;
+}
+.footer-news-block-p-top {
+  margin-bottom: 10px;
+  color: #808080;
+}
+.footer-news-block-p-cetner {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration: none;
+  color: black;
+}
+.footer-news-block-p-bottom {
+  margin-top: 10px;
+}
+.footer-news-block:hover .footer-news-block-p-cetner-span {
+  box-shadow: inset 0 calc(-2px) 0 0 #1B4677;
+}
+.footer-hr {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background: #C4C4C4;
+}
+.footer-contacts {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+}
+.footer-contacts .header-ul {
+  margin-top: 0;
+  margin-left: 0;
+}
+.footer-contacts-right-block {
+  display: flex;
+  flex-direction: column;
+}
+.footer-contacts-right-block-a {
+  margin-top: 10px;
+  text-decoration: none;
+  color: black;
+}
+.footer-contacts-right-block-a:first-child {
+  margin-top: 0;
+}
+.footer-contacts-right-block-a:hover .footer-contacts-right-block-a-span {
+  box-shadow: inset 0 calc(-2px) 0 0 #1B4677;
+}
+.footer-contacts-blockdown {
+  top: 100px;
+  display: flex;
+  position: absolute;
+}
+.footer-contacts-phone {
+  margin-right: 30px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+.footer-contacts-mail {
+  color: black;
+  text-decoration: none;
+}
+.footer-contacts-mail:hover .footer-contacts-mail-span {
+  box-shadow: inset 0 calc(-2px) 0 0 #1B4677;
+}
+.footer-contacts-p {
+  margin-top: 30px;
+}
+@media all and (min-width: 1200px) {
+  .main-mortgage-div {
+    max-width: 1140px;
+  }
+}
+@media all and (max-width: 1199px) {
+  .main-mortgage-div {
+    max-width: 960px;
+  }
+  .footer-contacts .footer-contacts-blockdown {
+    position: static;
+  }
+}
+@media all and (min-width: 1025px) {
+  .header-div-ul {
+    width: 100%;
+    display: flex;
+  }
+}
+@media all and (max-width: 1024px) {
+  .header-phone {
+    display: none;
+  }
+  .header-div-ul {
+    box-shadow: 0px 3px 3px 0px #000000;
+  }
+  .main {
+    margin-top: 80px !important;
+  }
+  .header {
+    top: 0;
+    left: 0;
+    height: 80px;
+    display: flex;
+    position: fixed;
+    z-index: 9;
+    background-color: white;
+  }
+  .header-container {
+    height: 80px;
+    align-items: center;
+  }
+  .header .header-blocks {
+    align-items: center;
+    position: static;
+  }
+  .header .header-blocks-block-left .header-logo {
+    margin-top: 0;
+    left: 15px;
+    top: 15px;
+    position: absolute;
+  }
+  .header .header-blocks-burger {
+    right: 15px;
+    display: flex;
+    position: absolute;
+    cursor: pointer;
+  }
+  .header .header-blocks-burger-top {
+    transform: rotate(0deg) translate(0px, 0px);
+    transition: transform 0.5s linear;
+  }
+  .header .header-blocks-burger-center {
+    opacity: 1;
+    transition: opacity 0.5s linear;
+  }
+  .header .header-blocks-burger-bottom {
+    transform: rotate(0deg) translate(0px, 0px);
+    transition: transform 0.5s linear;
+  }
+  .header .header-div-ul {
+    top: 80px;
+    left: 0;
+    right: 0;
+    min-width: 100%;
+    height: 0;
+    position: absolute;
+    overflow: hidden;
+    transition: height 0.5s linear;
+  }
+  .header .header-div-ul .header-ul {
+    margin: 0;
+    padding: 0 15px;
+    min-width: 100%;
+    flex-direction: column;
+    background: white;
+  }
+  .header .header-div-ul .header-ul-li {
+    margin: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  .header .header-div-ul .header-ul-li-a {
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .header .header-div-ul .header-ul-li.phone .header-phone {
+    margin: 0;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .main-slider-p-top {
+    font-size: 16px;
+    line-height: 18.5px;
+  }
+  .main-text-h2 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+  .main-projects-houses-block-a {
+    font-size: 22px;
+    line-height: 26.5px;
+  }
+}
+@media all and (max-width: 991px) {
+  .main-mortgage {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .main-mortgage-div {
+    max-width: 690px;
+  }
+  .main-projects-houses-block:nth-child(3) {
+    margin-top: 40px;
+  }
+  .footer-contacts .header-ul {
+    max-width: 1000px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1199px) {
+  .display-mobile-none {
+    display: none !important;
+  }
+  .footer-contacts .footer-contacts-right-block {
+    margin-top: 20px;
+    order: 2;
+  }
+  .footer-contacts .footer-contacts-blockdown {
+    margin-top: 90px;
+    order: 1;
+  }
+  .footer-contacts .footer-name-company {
+    order: 3;
+  }
+}
+@media all and (max-width: 767px) {
+  .main-mortgage-div {
+    max-width: 510px;
+  }
+  .display-mobile-none {
+    display: none !important;
+  }
+  .footer-contacts .header-ul {
+    flex-direction: column;
+  }
+  .footer-contacts .header-ul-li {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  .footer-contacts .header-ul-li:first-child {
+    margin-top: 0;
+  }
+  .footer-contacts .footer-contacts-blockdown {
+    margin-top: 30px;
+  }
+}
+@media all and (max-width: 535px) {
+  .main-apartment-selection-blockBackground {
+    background: none !important;
+  }
+  .main-people {
+    overflow: hidden !important;
+  }
+  .main-people-slider-container {
+    padding: 0 17% !important;
+  }
+  .main-people-slider-container .swiper-container {
+    overflow: visible !important;
+  }
+  .main-gallary {
+    overflow: hidden !important;
+  }
+  .main-gallary .main-gallary-container {
+    padding: 0 17% !important;
+  }
+  .main-gallary .gallary {
+    overflow: visible !important;
+  }
+  /*.main-people-slider-container {
+
+      & .swiper-slide {
+          margin-top: 0 !important;
+          padding: 12.5% !important;
+      }
+  }
+
+  .swiper-container.gallary {
+
+      & .swiper-slide {
+          margin-top: 0 !important;
+          padding: 12.5% !important;
+      }
+
+  }*/
+  .main-slider {
+    min-height: 566px;
+  }
+  .main-slider .swiper-slide {
+    min-height: 300px;
+    max-height: 300px;
+  }
+  .main-slider .swiper-slide .swiper-slide-background-shadow {
+    padding: 20px 0 40px;
+    bottom: -266px;
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+    min-height: 266px;
+    max-height: 266px;
+  }
+  .main-slider .swiper-slide .swiper-slide-background-shadow .main-slider-p-top {
+    margin-top: 0;
+  }
+  .main-slider .swiper-slide .swiper-slide-background-shadow .main-slider-p-bottom {
+    margin-top: 10px;
+  }
+  .main-slider .swiper-slide .swiper-slide-background-shadow .main-slider-div-button .main-slider-button {
+    padding: 0;
+    min-width: 100%;
+    width: 100%;
+    display: flex;
+    height: 40px;
+  }
+  .main-slider .swiper-slide .swiper-slide-background-shadow .main-slider-div-button .main-slider-button-span {
+    width: 100%;
+    text-align: center;
+  }
+  .main-slider .swiper-pagination.swiper-pagination-bullets {
+    top: -38px;
+  }
+  .main-slider-button.white-button-mobile:hover {
+    background-color: white;
+  }
+  .main-slider-button.white-button-mobile:hover .main-slider-button-span {
+    color: black;
+  }
+  .main-text-h2 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .main-projects-houses-block-a {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .main-projects-houses-block:nth-child(2) {
+    margin-top: 40px;
+  }
+  .main-mortgage {
+    padding: 0;
+    min-height: 300px;
+    max-height: 300px;
+    background-image: url(../img/family-2.png) !important;
+  }
+  .main-mortgage-block {
+    min-height: 566px;
+  }
+  .main-mortgage-div {
+    top: 300px;
+    padding: 20px 15px 40px;
+    min-height: 245px;
+    border-bottom: 1px solid #C4C4C4;
+    position: absolute;
+  }
+  .main-mortgage-p {
+    width: 100%;
+  }
+  .main-mortgage .main-slider-button {
+    padding: 0;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .main-mortgage .main-slider-button-span {
+    width: 100%;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */

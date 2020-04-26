@@ -605,6 +605,10 @@ button:focus {
   border: none;
   background: #C4C4C4;
 }
+.footer .main-projects-houses-block-a.image-gallery-text:hover .main-projects-houses-block-a-span {
+  color: black !important;
+  box-shadow: inset 0 calc(-2px) 0 0 black;
+}
 .footer-contacts {
   padding-top: 40px;
   padding-bottom: 40px;

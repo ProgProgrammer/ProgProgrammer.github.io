@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Управление строками</title>
+    <meta name="description" content="Menu">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="menu-top">
+            <hr class="menu-top-hr">
+            <button class="menu-top-buttons button">
+                Editor
+            </button>
+            <button class="menu-top-buttons button">
+                Preview
+            </button>
+        </div>
+        <div class="preview tab">
+            <div class="preview-adding">
+                <input type="text" class="preview-adding-input" placeholder="Enter item name">
+                <button class="preview-adding-button">
+                    Add
+                </button>
+            </div>
+            <div class="preview-column"></div>
+        </div>
+        <div class="editor tab">
+            <div class="editor-panel">
+                <div class="editor-panel-left">
+                    <p class="editor-panel-left-p">
+                        Name
+                    </p>
+                </div>
+                <div class="editor-panel-right">
+                    <p class="editor-panel-right-p">
+                        Date
+                    </p>
+                </div>
+            </div>
+            <div class="editor-column"></div>
+        </div>
+        <div class="preview-block">
+            <div class="preview-block-text">
+                <p class="preview-block-text-p text">
+                    Item 1
+                </p>
+            </div>
+            <div class="preview-block-buttons">
+                <button class="preview-block-buttons-button copy">
+                    <img class="preview-block-buttons-button-img" src="icons/copy.svg" alt="copy">
+                </button>
+                <button class="preview-block-buttons-button delete">
+                    <img class="preview-block-buttons-button-img remove" src="icons/delete.svg" alt="delete">
+                </button>
+            </div>
+        </div>
+        <div class="editor-block">
+            <div class="editor-block-left">
+                <p class="editor-block-left-p text">
+                    Item 1
+                </p>
+            </div>
+            <div class="editor-block-right">
+                <div class="editor-block-right-text">
+                    <p class="editor-block-right-text-p date">21.01.18</p>
+                    <p class="editor-block-right-text-p time">23:15</p>
+                </div>
+                <button class="editor-block-right-button">
+                    <img class="editor-block-right-button-img" src="icons/dots.svg" alt="dots">
+                </button>
+                <div class="editor-block-right-window">
+                    <div class="editor-block-right-window-block">
+                        <div class="editor-block-right-window-block-triangle"></div>
+                        <div class="editor-block-right-window-block-triangle-border"></div>
+                    </div>
+                    <p class="editor-block-right-window-a">
+                            <span class="editor-block-right-window-a-span top">
+                                Move to top
+                            </span>
+                    </p>
+                    <p class="editor-block-right-window-a">
+                            <span class="editor-block-right-window-a-span bottom">
+                                Move to bottom
+                            </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="dist/task.js"></script>
+</body>
+</html>

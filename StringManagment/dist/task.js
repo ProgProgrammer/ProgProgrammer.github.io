@@ -535,6 +535,14 @@ var AdditionalApertunity = /*#__PURE__*/function (_StringManagment) {
       objectAdditionalApertunity.delete = document.querySelectorAll(".delete");
       startFunctions();
     });
+    window.addEventListener("keydown", function (event) {
+      if (event.key === "Enter") {
+        additionalApertunity.addString(objectAdditionalApertunity.editorBlock[objectAdditionalApertunity.editorBlock.length - 1], objectAdditionalApertunity.previewBlock[objectAdditionalApertunity.previewBlock.length - 1]);
+        objectAdditionalApertunity.copy = document.querySelectorAll(".copy");
+        objectAdditionalApertunity.delete = document.querySelectorAll(".delete");
+        startFunctions();
+      }
+    });
     startFunctions();
   });
 })();
@@ -566,7 +574,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62664" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55591" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -1,0 +1,12 @@
+.enter {
+  padding: 0 10px;
+  width: 250px;
+  height: 30px;
+}
+
+.text {
+  margin-top: 20px;
+  padding: 5px;
+  min-height: 50px;
+  border: 1px solid red;
+}

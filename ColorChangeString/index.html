@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .cursorPointer {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <span v-bind:title="message" :style="{ color: textColor }" :class="{  }">
+            Наведи на меня курсор на пару секунд,
+            чтобы увидеть динамически связанное значение title!
+        </span>
+        <ul>
+            <li v-for="variant in variants" v-if="variant.variantText !== 'Серый'" v-bind:class="{ cursorPointer: defaultPointer }" v-on:click="addColorText(variant.variantColor)" @mouseover="updateTextColor(variant.variantColor)" @mouseout="textDefaultColor()">{{ variant.variantText + ' - ' + variant.variantColor }}</li>
+        </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 
+    <script src="task.js"></script>   
+</body>
+</html>

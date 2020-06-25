@@ -1,13 +1,16 @@
-
     var app = new Vue({
       el: '#app',
       data: {
         message: 'Пользователь, вы загрузили эту страницу: ' + new Date().toLocaleString(),
-        textColor: "black",
-        defaultColor: "black",
-        defaultPointer: true,
         addColor: false,
+        idVariants: 0,
+        idUlLi: 0,
+        defaultPointer: true,
         variants: [
+          {
+            variantText: "Черный",
+            variantColor: "black"
+          },
           {
             variantText: "Красный",
             variantColor: "red"
@@ -31,25 +34,31 @@
         ]
       },
       methods: {
-        updateTextColor: function(variantColor)
+        updateTextColor(index)
         {
             if (this.addColor === false)
             {
-                this.textColor = variantColor                
+                this.idVariants = index                
             }
         },
-        textDefaultColor: function()
+        textDefaultColor()
         {
             if (this.addColor === false)
             {
-                this.textColor = this.defaultColor               
+                this.idVariants = 0             
             }
         },
-        addColorText: function(variantColor)
+        addColorText(index)
         {
             this.addColor = false,
-            this.updateTextColor(variantColor),
+            this.updateTextColor(index),
             this.addColor = true
         }
+      },
+      computed: {
+          styleColor()
+          {
+              return this.variants[this.idVariants].variantColor
+          }
       }
     })

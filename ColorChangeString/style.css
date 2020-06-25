@@ -1,12 +1,19 @@
-.enter {
-  padding: 0 10px;
-  width: 250px;
-  height: 30px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.text {
-  margin-top: 20px;
-  padding: 5px;
-  min-height: 50px;
-  border: 1px solid red;
+#app {
+    padding: 15px;
+}
+
+ul {
+    margin-top: 15px;
+}
+
+.cursorPointer {
+    padding-left: 15px;
+    cursor: pointer;
+    list-style-type: none;
 }

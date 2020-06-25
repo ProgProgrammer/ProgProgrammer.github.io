@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <style>
-        .cursorPointer {
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="app">
-        <span v-bind:title="message" :style="{ color: textColor }" :class="{  }">
+        <span v-bind:title="message" :style="{ color: styleColor }">
             Наведи на меня курсор на пару секунд,
             чтобы увидеть динамически связанное значение title!
         </span>
         <ul>
-            <li v-for="variant in variants" v-if="variant.variantText !== 'Серый'" v-bind:class="{ cursorPointer: defaultPointer }" v-on:click="addColorText(variant.variantColor)" @mouseover="updateTextColor(variant.variantColor)" @mouseout="textDefaultColor()">{{ variant.variantText + ' - ' + variant.variantColor }}</li>
+            <li v-for="(variant, index) in variants" v-if="variant.variantText !== 'Черный'" v-bind:class="{ cursorPointer: defaultPointer }">
+                <span v-on:click="addColorText(index)" @mouseover="updateTextColor(index)" @mouseout="textDefaultColor()">
+                    {{ index + ' ' + variant.variantText }}
+                </span>
+            </li>
         </ul>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 

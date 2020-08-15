@@ -2,33 +2,30 @@
 
 (function () {
     window.addEventListener('DOMContentLoaded', () => {
-        const startSwiper = () =>
-        {
-            var swiper = new Swiper('.swiper-container.partners', {
-                slidesPerView: 4,
-                slidesOffsetBefore: 13,
-                loop: true,
-                grabCursor: true,
-                navigation: {
-                    nextEl: '.swiper-button-next.partners',
-                    prevEl: '.swiper-button-prev.partners'
+        var swiper = new Swiper('.swiper-container.partners', {
+            slidesPerView: 4,
+            slidesOffsetBefore: 13,
+            loop: true,
+            grabCursor: true,
+            navigation: {
+                nextEl: '.swiper-button-next.partners',
+                prevEl: '.swiper-button-prev.partners'
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1
                 },
-                breakpoints: {
-                    0: {
-                        slidesPerView: 1
-                    },
-                    496: {
-                        slidesPerView: 2
-                    },
-                    656: {
-                        slidesPerView: 3
-                    },
-                    784: {
-                        slidesPerView: 4
-                    }
+                496: {
+                    slidesPerView: 2
+                },
+                656: {
+                    slidesPerView: 3
+                },
+                784: {
+                    slidesPerView: 4
                 }
-            });
-        };
+            }
+        });
 
         const addMaxWidthSlide = () => {
             const defaultHeightBlock = 50;
@@ -60,10 +57,8 @@
             }
         };
 
-        startSwiper();
         addMaxWidthSlide();
         window.addEventListener('resize', () => {
-            startSwiper();
             setTimeout(() => addMaxWidthSlide(), 50);
         });
     });

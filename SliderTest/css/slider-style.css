@@ -6,7 +6,7 @@
 a:focus, img:focus, p:focus, span:focus, div:focus {
   outline: none; }
 
-a, span, div {
+a, span, div, img {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 @font-face {
@@ -60,12 +60,14 @@ a, span, div {
   margin: 50px auto 0;
   max-width: 1170px;
   width: 100%;
-  position: relative; }
+  position: relative;
+  display: flex; }
 
 .swiper-container.partners {
   margin: 0 90px;
   height: 82px;
-  border: 1px solid #ece4d7; }
+  border: 1px solid #ece4d7;
+  display: flex; }
   .swiper-container.partners .swiper-slide {
     border-left: 1px solid #ece4d7; }
     .swiper-container.partners .swiper-slide .slider-block-a {

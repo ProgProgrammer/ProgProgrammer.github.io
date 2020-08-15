@@ -49,7 +49,9 @@ a, span, div {
   background: transparent; }
 
 .slider-block {
-  padding: 100px 15px; }
+  padding: 100px 15px;
+  display: flex;
+  flex-direction: column; }
 
 .slider-block-a {
   display: flex; }

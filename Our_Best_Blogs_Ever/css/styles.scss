@@ -1,5 +1,6 @@
 @import "_constants.scss";
 @import "_fonts.scss";
+@import "_spinner.scss";
 
 * {
   box-sizing: border-box;
@@ -9,6 +10,12 @@ h1, h2, h3, p, a, span, button {
   margin: 0;
   font-family: $font-f-gilroy;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.spinner {
+  margin-top: 40px;
+  display: none;
+  justify-content: center;
 }
 
 .header, .main, footer {
@@ -205,7 +212,7 @@ h1, h2, h3, p, a, span, button {
       margin-top: $margin-top-articles-full_tablet;
     }
   }
-  .button {
+  .button, .spinner {
     margin-top: $margin-top-articles-full_tablet;
   }
 }
@@ -240,6 +247,9 @@ h1, h2, h3, p, a, span, button {
   .block_theme_article {
     padding-left: 5px;
     padding-right: 5px;
+  }
+  .block_theme_article, button, .spinner {
+    margin-top: $margin-top-articles-mobile;
   }
 }
 

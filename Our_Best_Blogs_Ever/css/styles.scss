@@ -228,11 +228,18 @@ h1, h2, h3, p, a, span, button {
 
 @media all and (max-width: 534px) {
   .header {
-    margin-top: 60px;
-    padding-bottom: 45px;
+    margin-top: 40px;
+    padding-bottom: 40px;
+
+    &_p {
+      margin-top: 20px;
+    }
   }
   .main {
     margin-bottom: 60px;
+  }
+  .block_img {
+    max-height: 300px;
   }
   .block__header_adaptive_margin {
     margin-top: 15px;
@@ -250,6 +257,16 @@ h1, h2, h3, p, a, span, button {
   }
   .block_theme_article, button, .spinner {
     margin-top: $margin-top-articles-mobile;
+  }
+}
+
+@media all and (max-width: 374px) {
+  .header {
+    margin-top: 35px;
+    padding-bottom: 35px;
+  }
+  .block_img {
+    max-height: 250px;
   }
 }
 

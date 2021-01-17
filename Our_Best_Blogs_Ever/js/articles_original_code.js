@@ -4,7 +4,6 @@
     {
         let counter = 0;
         let request = true;
-        let block_button = false;
         const step = 6;
         const start_spinner = "start";
         const button = document.querySelector(".button");
@@ -17,13 +16,23 @@
             if (command === start_spinner)
             {
                 block_spinner.style.display = "flex";
+                if (spinner_element === null)
+                {
+                    const string = '<div class="loadingio-spinner-double-ring-mmxwcmu6s6">' +
+                        '<div class="ldio-mlxrpb9uod">' +
+                        '<div></div>'+
+                        '<div></div>'+
+                        '<div><div></div></div>'+
+                        '<div><div></div></div>'+
+                        '</div></div>';
+                    block_spinner.innerHTML = string;
+                }
                 if (error !== null)
                 {
                     console.error("Ошибка: ", error);
                 }
                 if (error !== null && error_articles === 1)
                 {
-                    block_button = false;
                     request = false;
                     setTimeout(start_loaded_articles, 5000, "request");
                 }
@@ -32,6 +41,7 @@
             {
                 if (spinner_element !== null)
                 {
+                    spinner_element.remove();
                     block_spinner.style.display = "none";
                     request = true;
                 }
@@ -59,23 +69,26 @@
             {
                 spinner("off");
             }
-            const string = '<article class="col-12 col-lg-6 block block_theme_article" data-id="' + json.id + '">' +
-                '<div class="block__text-block block__text-block_theme_article">' +
-                '        <h3 class="block__header block__header_theme_article">' +
-                json.title + '</h3>' +
-                '        <div class="block__text-block-description">' +
-                '<p class="block__up-text block__up-text_theme_article">' +
-                json.body + '</p>' +
-                '        <a href="#" class="block__url block__url_theme_article">' +
-                '            Read More' +
-                '        </a>' +
-                '    </div>' +
-                '</div>' +
-                '</article>';
-            block.insertAdjacentHTML('beforeend', string);
+            if (json.id !== undefined)
+            {
+                const string = '<article class="col-12 col-lg-6 block block_theme_article" data-id="' + json.id + '">' +
+                    '<div class="block__text-block block__text-block_theme_article">' +
+                    '        <h3 class="block__header block__header_theme_article">' +
+                    json.title + '</h3>' +
+                    '        <div class="block__text-block-description">' +
+                    '<p class="block__up-text block__up-text_theme_article">' +
+                    json.body + '</p>' +
+                    '        <a href="#" class="block__url block__url_theme_article">' +
+                    '            Read More' +
+                    '        </a>' +
+                    '    </div>' +
+                    '</div>' +
+                    '</article>';
+                block.insertAdjacentHTML('beforeend', string);
+            }
             if (counter_articles === step)
             {
-                block_button = false;
+                request = true;
             }
         }
 
@@ -83,16 +96,13 @@
         {
             let counter_articles = 0;
             let error_articles = 0;
-            if (block_button === false)
-            {
-                block_button = true;
-                for (let i = value; i < number; i++) {
-                    fetch('https://jsonplaceholder.typicode.com/posts/' + i)
-                        .then((response) => { counter_articles++; return response.json(); })
-                        .then((json) => add_blocks(json, counter_articles))
-                        .catch((error) => { error_articles++; spinner(start_spinner, error, error_articles); } );
-                } // - код для запроса новых данных
-            }
+            request = false;
+            for (let i = value; i < number; i++) {
+                fetch('https://jsonplaceholder.typicode.com/posts/' + i)
+                    .then((response) => { counter_articles++; return response.json(); })
+                    .then((json) => add_blocks(json, counter_articles))
+                    .catch((error) => { error_articles++; spinner(start_spinner, error, error_articles); } );
+            } // - код для запроса новых данных
         }
 
         const start_loaded_articles = (value) =>
@@ -101,9 +111,12 @@
                 (request === true && value === "request_button")) {
                 const arr = [];
                 let articles = document.querySelectorAll(".blocks .block_theme_article");
-                if (counter === 0) {
+                if (counter === 0)
+                {
                     loaded_articles(step + 1);
-                } else {
+                }
+                else
+                {
                     for (let i = 2; i < articles.length; i++) {
                         arr[i] = Number(articles[i].dataset.id);
                     }

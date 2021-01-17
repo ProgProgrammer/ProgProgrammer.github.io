@@ -106,7 +106,6 @@
             {
                 if (array_id[a] === id)
                 {
-                    console.log("id_error = " + id);
                     return false;
                 }
             }
@@ -143,6 +142,10 @@
             {
                 block_button = false;
                 counter++;
+            }
+            if (json.id === undefined)
+            {
+                button.style.pointerEvents = "none";
             }
         }
 

@@ -12,6 +12,10 @@ h1, h2, h3, p, a, span, button {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+button:focus {
+  outline: none;
+}
+
 .spinner {
   margin-top: 40px;
   display: none;
@@ -279,7 +283,12 @@ h1, h2, h3, p, a, span, button {
   }
   .header_p, .block__url, .block__up-text_theme_article,
   .button {
-    font-size: $font-s-18-full_tablet
+    font-size: $font-s-18-full_tablet;
+  }
+  .button {
+    width: 190px;
+    height: 52px;
+    line-height: 48px;
   }
   .block__header {
     font-size: $font-s-48-full_tablet;
@@ -299,7 +308,12 @@ h1, h2, h3, p, a, span, button {
   }
   .header_p, .block__url, .block__up-text_theme_article,
   .button {
-    font-size: $font-s-18-tablet
+    font-size: $font-s-18-tablet;
+  }
+  .button {
+    width: 180px;
+    height: 49px;
+    line-height: 45px;
   }
   .block__header {
     font-size: $font-s-48-tablet;
@@ -315,7 +329,12 @@ h1, h2, h3, p, a, span, button {
   }
   .header_p, .block__url, .block__up-text_theme_article,
   .button {
-    font-size: $font-s-18-mobile
+    font-size: $font-s-18-mobile;
+  }
+  .button {
+    width: 160px;
+    height: 44px;
+    line-height: 40px;
   }
   .block__header {
     font-size: $font-s-48-mobile;
@@ -331,7 +350,7 @@ h1, h2, h3, p, a, span, button {
   }
   .header_p, .block__url, .block__up-text_theme_article,
   .button {
-    font-size: $font-s-18-small-mobile
+    font-size: $font-s-18-small-mobile;
   }
   .block__header {
     font-size: $font-s-48-small-mobile;
@@ -341,5 +360,13 @@ h1, h2, h3, p, a, span, button {
   }
   .block__url_theme_article {
     font-size: $font-s-14-small-mobile;
+  }
+}
+
+@media all and (max-width: 319px) {
+  .button {
+    width: 150px;
+    height: 40px;
+    line-height: 36px;
   }
 }

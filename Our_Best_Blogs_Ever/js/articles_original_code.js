@@ -4,6 +4,7 @@
     {
         let counter = 0;
         let request = true;
+        let block_button = false;
         const step = 6;
         const start_spinner = "start";
         const button = document.querySelector(".button");
@@ -16,23 +17,13 @@
             if (command === start_spinner)
             {
                 block_spinner.style.display = "flex";
-                if (spinner_element === null)
-                {
-                    const string = '<div class="loadingio-spinner-double-ring-mmxwcmu6s6">' +
-                        '<div class="ldio-mlxrpb9uod">' +
-                        '<div></div>'+
-                        '<div></div>'+
-                        '<div><div></div></div>'+
-                        '<div><div></div></div>'+
-                        '</div></div>';
-                    block_spinner.innerHTML = string;
-                }
                 if (error !== null)
                 {
                     console.error("Ошибка: ", error);
                 }
                 if (error !== null && error_articles === 1)
                 {
+                    block_button = false;
                     request = false;
                     setTimeout(start_loaded_articles, 5000, "request");
                 }
@@ -41,7 +32,6 @@
             {
                 if (spinner_element !== null)
                 {
-                    spinner_element.remove();
                     block_spinner.style.display = "none";
                     request = true;
                 }
@@ -83,18 +73,26 @@
                 '</div>' +
                 '</article>';
             block.insertAdjacentHTML('beforeend', string);
+            if (counter_articles === step)
+            {
+                block_button = false;
+            }
         }
 
         const loaded_articles = (number, value = 1) =>
         {
             let counter_articles = 0;
             let error_articles = 0;
-            for (let i = value; i < number; i++) {
-                fetch('https://jsonplaceholder.typicode.com/posts/' + i)
-                    .then((response) => { counter_articles++; return response.json(); })
-                    .then((json) => add_blocks(json, counter_articles))
-                    .catch((error) => { error_articles++; spinner(start_spinner, error, error_articles); } );
-            } // - код для запроса новых данных
+            if (block_button === false)
+            {
+                block_button = true;
+                for (let i = value; i < number; i++) {
+                    fetch('https://jsonplaceholder.typicode.com/posts/' + i)
+                        .then((response) => { counter_articles++; return response.json(); })
+                        .then((json) => add_blocks(json, counter_articles))
+                        .catch((error) => { error_articles++; spinner(start_spinner, error, error_articles); } );
+                } // - код для запроса новых данных
+            }
         }
 
         const start_loaded_articles = (value) =>

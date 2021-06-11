@@ -1460,6 +1460,9 @@ li {
   .programbottom__head {
     font-size: 24px;
     line-height: 34px; }
+  .programbottom__item {
+    font-size: 16px;
+    line-height: 24px; }
   .programbottom__accordionhead {
     font-size: 16px;
     line-height: 24px; }

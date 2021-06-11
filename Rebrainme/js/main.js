@@ -245,9 +245,9 @@ var APP = (_APP = {
 }), _defineProperty(_APP, "accordoin", function accordoin() {
   var timeout = 300;
   window.addEventListener('DOMContentLoaded', function () {
-    var accordions = document.querySelectorAll('.programbottom__paragraph');
-    var accordions_block = document.querySelectorAll('.programbottom__accordoinlist');
-    var accordions_list = document.querySelectorAll('.programbottom__list');
+    var accordions = document.querySelectorAll('.js-paragraph');
+    var accordions_block = document.querySelectorAll('.js-accordoinlist');
+    var accordions_list = document.querySelectorAll('.js-list');
     accordions[0].classList.add('active');
     accordions_block[0].style.height = "".concat(accordions_list[0].offsetHeight, "px");
     setTimeout(function () {

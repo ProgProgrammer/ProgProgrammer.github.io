@@ -779,8 +779,8 @@ textarea.form-control {
   margin-right: 0px; }
 
 .header__link {
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 1.11vw;
+  line-height: 1.25vw;
   font-family: "PT Mono", monospace;
   color: white;
   display: -webkit-box;
@@ -795,14 +795,13 @@ textarea.form-control {
 
 .header__button {
   padding: 6px 10px 6px 15px;
-  min-width: 182px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
+  font-size: 1.11vw;
   font-family: "PT Mono", monospace;
   font-weight: 700;
-  line-height: 18px;
+  line-height: 1.25vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1139,9 +1138,9 @@ li {
 .main__head {
   margin-top: 95px;
   width: 84%;
-  font-size: 48px;
+  font-size: 3.33vw;
   font-weight: 700;
-  line-height: 58px;
+  line-height: 4.03vw;
   color: white; }
 
 .main__program {
@@ -1172,8 +1171,8 @@ li {
   height: 48px; }
 
 .main__itemtext {
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1.25vw;
+  line-height: 1.53vw;
   color: white; }
 
 .main__button {
@@ -1182,7 +1181,7 @@ li {
   background-color: #FFE352;
   cursor: pointer;
   font-weight: 600;
-  line-height: 19px;
+  line-height: 1.32vw;
   border-radius: 10px;
   border: none; }
 
@@ -1226,14 +1225,14 @@ li {
   color: white; }
 
 .programtop__head {
-  font-size: 24px;
+  font-size: 1.67vw;
   font-weight: 500;
-  line-height: 34px; }
+  line-height: 2.36vw; }
 
 .programtop__text {
   margin-top: 30px;
-  font-size: 18px;
-  line-height: 26px; }
+  font-size: 1.25vw;
+  line-height: 1.81vw; }
 
 .programtop__text:nth-child(2) {
   margin-top: 40px; }
@@ -1250,8 +1249,8 @@ li {
 
 .programbottom__head {
   margin-top: 70px;
-  font-size: 24px;
-  line-height: 34px;
+  font-size: 1.67vw;
+  line-height: 2.36vw;
   color: #3A5165; }
 
 .programbottom__accordionblock {
@@ -1293,9 +1292,9 @@ li {
           transform: scale(-1); }
 
 .programbottom__accordionhead {
-  font-size: 16px;
+  font-size: 1.11vw;
   font-weight: 600;
-  line-height: 24px; }
+  line-height: 1.67vw; }
 
 .programbottom__accordoinlist {
   height: 0;
@@ -1305,8 +1304,8 @@ li {
   padding: 10px 0 20px 25px; }
 
 .programbottom__item {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1.11vw;
+  line-height: 1.67vw;
   list-style-type: disc;
   color: #3A5165; }
 
@@ -1366,8 +1365,9 @@ li {
   position: absolute; }
 
 .competition__block {
-  margin: 0 85px 0 70px;
-  width: 74.65277777777778%;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 49.30555555555556%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1381,9 +1381,9 @@ li {
 
 .competition__text {
   padding-right: 15px;
-  font-size: 22px;
+  font-size: 1.53vw;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.94vw;
   text-align: center;
   color: rgba(0, 0, 0, 0.72); }
 
@@ -1392,24 +1392,27 @@ li {
 
 .competition__blockbutton {
   padding-left: 15px;
+  width: 25.34722222222222%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .competition__button {
   padding: 10px 30px;
-  min-width: 241px;
   background-color: #FE5955;
   -webkit-box-shadow: 0px 4px 24px rgba(162, 54, 51, 0.25);
           box-shadow: 0px 4px 24px rgba(162, 54, 51, 0.25);
   border-radius: 15px;
   border: none;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 1.39vw;
+  line-height: 1.94vw;
   color: white;
   cursor: pointer; }
 
@@ -1434,6 +1437,41 @@ li {
 @media (min-width: 1200px){
   body:after {
     content: "1200px"; } }
+
+@media all and (min-width: 1440px){
+  .header__link {
+    font-size: 16px;
+    line-height: 18px; }
+  .header__button {
+    font-size: 16px;
+    line-height: 18px; }
+  .main__head {
+    font-size: 48px;
+    line-height: 58px; }
+  .main__itemtext {
+    font-size: 18px;
+    line-height: 22px; }
+  .programtop__head {
+    font-size: 24px;
+    line-height: 34px; }
+  .programtop__text {
+    font-size: 18px;
+    line-height: 26px; }
+  .programbottom__head {
+    font-size: 24px;
+    line-height: 34px; }
+  .programbottom__accordionhead {
+    font-size: 16px;
+    line-height: 24px; }
+  .programbottom__accordionhead {
+    font-size: 16px;
+    line-height: 24px; }
+  .competition__text {
+    font-size: 22px;
+    line-height: 28px; }
+  .competition__button {
+    font-size: 20px;
+    line-height: 28px; } }
 
 @media all and (max-width: 1200px){
   .main {

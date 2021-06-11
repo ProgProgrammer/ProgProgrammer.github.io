@@ -243,25 +243,39 @@ var APP = (_APP = {
 }), _defineProperty(_APP, "initOnLoad", function initOnLoad() {
   utils.truncateText(document.querySelectorAll('.js-dot'));
 }), _defineProperty(_APP, "accordoin", function accordoin() {
+  var timeout = 300;
   window.addEventListener('DOMContentLoaded', function () {
     var accordions = document.querySelectorAll('.programbottom__paragraph');
     var accordions_block = document.querySelectorAll('.programbottom__accordoinlist');
     var accordions_list = document.querySelectorAll('.programbottom__list');
     accordions[0].classList.add('active');
     accordions_block[0].style.height = "".concat(accordions_list[0].offsetHeight, "px");
+    setTimeout(function () {
+      accordions_block[0].style.height = "auto";
+    }, timeout);
 
     var _loop = function _loop(i) {
       accordions[i].addEventListener('click', function () {
         if (!accordions[i].classList.contains('active')) {
-          for (var a = 0; a < accordions.length; a++) {
+          var _loop2 = function _loop2(a) {
             if (accordions[a].classList.contains('active')) {
               accordions[a].classList.remove('active');
-              accordions_block[a].style.height = "0px";
+              accordions_block[a].style.height = "".concat(accordions_list[a].offsetHeight, "px");
+              setTimeout(function () {
+                accordions_block[a].style.height = "0px";
+              }, 10);
             }
+          };
+
+          for (var a = 0; a < accordions.length; a++) {
+            _loop2(a);
           }
 
           accordions[i].classList.add('active');
           accordions_block[i].style.height = "".concat(accordions_list[i].offsetHeight, "px");
+          setTimeout(function () {
+            accordions_block[i].style.height = "auto";
+          }, timeout);
         }
       });
     };

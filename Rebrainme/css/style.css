@@ -721,8 +721,7 @@ textarea.form-control {
 
 .header__menu {
   margin: 0 auto;
-  max-width: 1325px;
-  padding: 0 2.08vw 0 1.04vw;
+  padding: 0 4.86vw;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1110,8 +1109,8 @@ li {
 
 .main__content {
   margin: 0 auto;
-  padding: 5.56vw 0 0;
-  max-width: 1160px;
+  padding: 5.56vw 4.17vw 0;
+  max-width: 1300px;
   width: 100%; }
 
 .main__blockLogotypes, .main__head {
@@ -1249,7 +1248,7 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 0px 0px 20px 20px;
+  border-radius: 0px 0px 1.39vw 1.39vw;
   background-color: #F3F6F9; }
 
 .programbottom__head {
@@ -1447,7 +1446,7 @@ li {
   .header {
     height: 60px; }
   .header__menu {
-    padding: 0 30px 0 15px; }
+    padding: 0 70px; }
   .header__link {
     font-size: 16px;
     line-height: 18px; }
@@ -1477,7 +1476,7 @@ li {
     left: -190px;
     top: -156px; }
   .main__content {
-    padding: 80px 0 0; }
+    padding: 80px 70px 0; }
   .main__logotype, .main__logotype-url {
     max-height: 50px; }
   .main__blockLogotypes, .main__head {
@@ -1526,7 +1525,8 @@ li {
     font-size: 18px;
     line-height: 26px; }
   .programbottom {
-    padding: 0 90px 70px; }
+    padding: 0 90px 70px;
+    border-radius: 0px 0px 20px 20px; }
   .programbottom__head {
     margin-top: 70px;
     font-size: 24px;

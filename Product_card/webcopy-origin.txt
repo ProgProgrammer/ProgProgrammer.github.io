@@ -1,0 +1,256 @@
+Uri: https://1-2-3.menu/product/originalnoe/ostryy-salat-kimchi-s-telyatinoy/
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\product\originalnoe\ostryy-salat-kimchi-s-telyatinoy\index.htm
+Content Type: text/html
+
+Uri: https://1-2-3.menu/upload/resize_cache/iblock/bd9/150_150_1/l5oly34esjieci0jau2g3l9frnaumxgo.jpg
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\upload\resize_cache\iblock\bd9\150_150_1\l5oly34esjieci0jau2g3l9frnaumxgo.jpg
+Content Type: image/jpeg
+
+Uri: https://1-2-3.menu/upload/resize_cache/iblock/e62/150_150_1/hi60qsqq9snb5baclilsiggn0yow7i9k.jpg
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\upload\resize_cache\iblock\e62\150_150_1\hi60qsqq9snb5baclilsiggn0yow7i9k.jpg
+Content Type: image/jpeg
+
+Uri: https://1-2-3.menu/favicon.ico
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\favicon.ico
+Content Type: image/vnd.microsoft.icon
+
+Uri: https://1-2-3.menu/bitrix/js/main/core/css/core.css?16194429083934
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\bitrix\js\main\core\css\core.css
+Content Type: text/css
+
+Uri: https://1-2-3.menu/bitrix/js/ui/bootstrap4/css/bootstrap.css?1618832373182028
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\bitrix\js\ui\bootstrap4\css\bootstrap.css
+Content Type: text/css
+
+Uri: https://1-2-3.menu/bitrix/js/ui/fonts/opensans/ui.font.opensans.css?16188323732003
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\bitrix\js\ui\fonts\opensans\ui.font.opensans.css
+Content Type: text/css
+
+Uri: https://1-2-3.menu/bitrix/js/main/popup/dist/main.popup.bundle.css?161883237626445
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\bitrix\js\main\popup\dist\main.popup.bundle.css
+Content Type: text/css
+
+Uri: https://1-2-3.menu/local/templates/123/components/bitrix/catalog.element/123menu0catalog-element-detail/style.css?162022608726428
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\local\templates\123\components\bitrix\catalog.element\123menu0catalog-element-detail\style.css
+Content Type: text/css
+
+Uri: https://1-2-3.menu/local/templates/123/styles/vendor.min.css?1618832414194840
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\local\templates\123\styles\vendor.min.css
+Content Type: text/css
+
+Uri: https://1-2-3.menu/local/templates/123/styles/main.css?1629805714146471
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\local\templates\123\styles\main.css
+Content Type: text/css
+
+Uri: https://1-2-3.menu/local/templates/123/styles/shame.css?16284992958565
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\local\templates\123\styles\shame.css
+Content Type: text/css
+
+Uri: https://1-2-3.menu/local/templates/123/styles/shame-mx.css?16243180731350
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\local\templates\123\styles\shame-mx.css
+Content Type: text/css
+
+Uri: https://1-2-3.menu/local/templates/123/styles/jquery.toast.min.css?16206420455104
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\local\templates\123\styles\jquery.toast.min.css
+Content Type: text/css
+
+Uri: https://1-2-3.menu/local/templates/123/components/bitrix/sale.basket.basket.line/123-header-cart--mobile/style.css?16188324144718
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\local\templates\123\components\bitrix\sale.basket.basket.line\123-header-cart--mobile\style.css
+Content Type: text/css
+
+Uri: https://1-2-3.menu/local/templates/123/components/bitrix/sale.basket.basket.line/123-header-cart/style.css?16188324144718
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\local\templates\123\components\bitrix\sale.basket.basket.line\123-header-cart\style.css
+Content Type: text/css
+
+Uri: https://1-2-3.menu/bitrix/components/altasib/geobase.your.city/templates/.default/style.css?16267972536045
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\bitrix\components\altasib\geobase.your.city\templates\.default\style.css
+Content Type: text/css
+
+Uri: https://1-2-3.menu/bitrix/components/altasib/geobase.select.city/templates/.default/style.css?162679725014347
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\bitrix\components\altasib\geobase.select.city\templates\.default\style.css
+Content Type: text/css
+
+Uri: https://www.facebook.com/1-2-3menu-104541861680811
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\1-2-3menu-104541861680811.html
+Content Type: text/html
+
+Uri: https://1-2-3.menu/product/originalnoe/ostryy-salat-kimchi-s-telyatinoy/index.html
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\product\originalnoe\ostryy-salat-kimchi-s-telyatinoy\index.html
+Content Type: text/html
+
+Uri: https://1-2-3.menu/d/styles/main.css
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\d\styles\main.css
+Content Type: text/css
+
+Uri: https://1-2-3.menu/local/templates/123/styles/shame.css?16232665255875
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\local\templates\123\styles\shame-1.css
+Content Type: text/css
+
+Uri: https://1-2-3.menu/local/templates/123/scripts/shame.js?16232665255875
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\local\templates\123\scripts\shame.js
+Content Type: application/javascript
+
+Uri: https://1-2-3.menu/assets/share-plugin/jquery.floating-social-share.min.css
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\assets\share-plugin\jquery.floating-social-share.min.css
+Content Type: text/css
+
+Uri: https://1-2-3.menu/bitrix/js/main/core/core.js?1619442919564150
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\bitrix\js\main\core\core.js
+Content Type: application/javascript
+
+Uri: https://1-2-3.menu/bitrix/js/pull/protobuf/protobuf.js?1618832372274055
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\bitrix\js\pull\protobuf\protobuf.js
+Content Type: application/javascript
+
+Uri: https://1-2-3.menu/bitrix/js/pull/protobuf/model.js?161883237270928
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\bitrix\js\pull\protobuf\model.js
+Content Type: application/javascript
+
+Uri: https://1-2-3.menu/bitrix/js/rest/client/rest.client.js?161883237417414
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\bitrix\js\rest\client\rest.client.js
+Content Type: application/javascript
+
+Uri: https://1-2-3.menu/bitrix/js/pull/client/pull.client.js?161944288068656
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\bitrix\js\pull\client\pull.client.js
+Content Type: application/javascript
+
+Uri: https://1-2-3.menu/bitrix/js/main/core/core_fx.js?161883237616888
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\bitrix\js\main\core\core_fx.js
+Content Type: application/javascript
+
+Uri: https://1-2-3.menu/bitrix/js/main/jquery/jquery-3.3.1.min.js?161883237486927
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\bitrix\js\main\jquery\jquery-3.3.1.min.js
+Content Type: application/javascript
+
+Uri: https://1-2-3.menu/bitrix/js/ui/bootstrap4/js/bootstrap.js?1618832373123765
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\bitrix\js\ui\bootstrap4\js\bootstrap.js
+Content Type: application/javascript
+
+Uri: https://1-2-3.menu/bitrix/js/main/popup/dist/main.popup.bundle.js?1619442919109107
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\bitrix\js\main\popup\dist\main.popup.bundle.js
+Content Type: application/javascript
+
+Uri: https://1-2-3.menu/bitrix/js/currency/currency-core/dist/currency-core.bundle.js?16194428665396
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\bitrix\js\currency\currency-core\dist\currency-core.bundle.js
+Content Type: application/javascript
+
+Uri: https://1-2-3.menu/bitrix/js/currency/core_currency.js?16194428661141
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\bitrix\js\currency\core_currency.js
+Content Type: application/javascript
+
+Uri: https://1-2-3.menu/bitrix/js/main/jquery/jquery-1.8.3.min.js?161883237493637
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\bitrix\js\main\jquery\jquery-1.8.3.min.js
+Content Type: application/javascript
+
+Uri: https://1-2-3.menu/local/templates/123/scripts/vendor.min.js?1626710259295736
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\local\templates\123\scripts\vendor.min.js
+Content Type: application/javascript
+
+Uri: https://1-2-3.menu/local/templates/123/scripts/app.js?162825645318470
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\local\templates\123\scripts\app.js
+Content Type: application/javascript
+
+Uri: https://1-2-3.menu/local/templates/123/scripts/shame.js?162844265711688
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\local\templates\123\scripts\shame-1.js
+Content Type: application/javascript
+
+Uri: https://1-2-3.menu/local/templates/123/scripts/shame-mx.js?1624316970512
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\local\templates\123\scripts\shame-mx.js
+Content Type: application/javascript
+
+Uri: https://1-2-3.menu/local/templates/123/scripts/jquery.toast.min.js?15111824706618
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\local\templates\123\scripts\jquery.toast.min.js
+Content Type: application/javascript
+
+Uri: https://1-2-3.menu/local/templates/123/scripts/jquery-ui.min.js?162453504022056
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\local\templates\123\scripts\jquery-ui.min.js
+Content Type: application/javascript
+
+Uri: https://1-2-3.menu/bitrix/components/bitrix/search.title/script.js?16188323889847
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\bitrix\components\bitrix\search.title\script.js
+Content Type: application/javascript
+
+Uri: https://1-2-3.menu/local/templates/123/components/bitrix/search.title/mobile/script.js?159330532210017
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\local\templates\123\components\bitrix\search.title\mobile\script.js
+Content Type: application/javascript
+
+Uri: https://1-2-3.menu/local/templates/123/components/bitrix/sale.basket.basket.line/123-header-cart--mobile/script.js?16188324145343
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\local\templates\123\components\bitrix\sale.basket.basket.line\123-header-cart--mobile\script.js
+Content Type: application/javascript
+
+Uri: https://1-2-3.menu/local/templates/123/components/bitrix/search.title/corp/script.js?159330532210017
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\local\templates\123\components\bitrix\search.title\corp\script.js
+Content Type: application/javascript
+
+Uri: https://1-2-3.menu/local/templates/123/components/bitrix/sale.basket.basket.line/123-header-cart/script.js?16188324145343
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\local\templates\123\components\bitrix\sale.basket.basket.line\123-header-cart\script.js
+Content Type: application/javascript
+
+Uri: https://1-2-3.menu/bitrix/components/altasib/geobase.your.city/templates/.default/script.js?162679725013516
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\bitrix\components\altasib\geobase.your.city\templates\.default\script.js
+Content Type: application/javascript
+
+Uri: https://1-2-3.menu/bitrix/components/altasib/geobase.select.city/templates/.default/script.js?162679725630547
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\bitrix\components\altasib\geobase.select.city\templates\.default\script.js
+Content Type: application/javascript
+
+Uri: https://1-2-3.menu/local/templates/123/components/bitrix/catalog.element/123menu0catalog-element-detail/script.js?162379590289366
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\local\templates\123\components\bitrix\catalog.element\123menu0catalog-element-detail\script.js
+Content Type: application/javascript
+
+Uri: https://www.googletagmanager.com/ns.html?id=GTM-W7VQXV3
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\ns.html
+Content Type: text/html
+
+Uri: https://1-2-3.menu/local/templates/123/img/123logo.png
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\local\templates\123\img\123logo.png
+Content Type: image/png
+
+Uri: https://1-2-3.menu/assets/share-plugin/jquery.floating-social-share.min.js
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\assets\share-plugin\jquery.floating-social-share.min.js
+Content Type: application/javascript
+
+Uri: https://1-2-3.menu/upload/resize_cache/iblock/bd9/391_391_1/l5oly34esjieci0jau2g3l9frnaumxgo.jpg
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\upload\resize_cache\iblock\bd9\391_391_1\l5oly34esjieci0jau2g3l9frnaumxgo.jpg
+Content Type: image/jpeg
+
+Uri: https://1-2-3.menu/upload/resize_cache/iblock/e62/391_391_1/hi60qsqq9snb5baclilsiggn0yow7i9k.jpg
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\upload\resize_cache\iblock\e62\391_391_1\hi60qsqq9snb5baclilsiggn0yow7i9k.jpg
+Content Type: image/jpeg
+
+Uri: https://1-2-3.menu/images/icons/icon-share.png
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\images\icons\icon-share.png
+Content Type: image/png
+
+Uri: https://1-2-3.menu/images/icons/weght.png
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\images\icons\weght.png
+Content Type: image/png
+
+Uri: https://1-2-3.menu/images/icons/timer.png
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\images\icons\timer.png
+Content Type: image/png
+
+Uri: https://1-2-3.menu/images/icons/calendar.png
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\images\icons\calendar.png
+Content Type: image/png
+
+Uri: https://1-2-3.menu/local/templates/123/components/bitrix/catalog.element/123menu0catalog-element-detail/images/no_photo.png
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\local\templates\123\components\bitrix\catalog.element\123menu0catalog-element-detail\images\no_photo.png
+Content Type: image/png
+
+Uri: https://1-2-3.menu/local/templates/123/components/bitrix/catalog.element/123menu0catalog-element/script.js
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\local\templates\123\components\bitrix\catalog.element\123menu0catalog-element\script.js
+Content Type: application/javascript
+
+Uri: https://1-2-3.menu/local/templates/123/img/footer-bg.jpg
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\local\templates\123\img\footer-bg.jpg
+Content Type: image/jpeg
+
+Uri: https://1-2-3.menu/local/templates/123/img/footer-logo.png
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\local\templates\123\img\footer-logo.png
+Content Type: image/png
+
+Uri: https://www.instagram.com/accounts/login/
+File Name: C:\Downloaded Web Sites\product_card\1-2-3.menu\accounts\login\index.htm
+Content Type: text/html
+
